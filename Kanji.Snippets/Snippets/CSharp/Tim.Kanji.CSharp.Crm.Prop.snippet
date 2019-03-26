@@ -1,0 +1,35 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2008/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Kanji - Propiedad CRM</Title>
+      <Author>Tecnologías de Información Móvil</Author>
+      <Description>Crea una propiedad para el SDK TIM.</Description>
+      <Shortcut>kcrmprop</Shortcut>
+    </Header>
+    <Snippet>      
+      <Declarations>
+        <Literal>
+          <ID>NombreEsquemaCRMAtributo</ID>
+          <ToolTip>Reemplazar por el nombre de esquema del atributo a mapear.</ToolTip>
+          <Default>Nombre_de_esquema_de_atributo</Default>
+        </Literal>
+        <Object>
+          <ID>TipoDato</ID>
+          <Type>Entidades.CrmLockup</Type>
+          <ToolTip>Asignar un tipo de dato soportado por el framework TI-M, todos los tipos de datos deben de ser dfinidos como nullables: TipoDato?, a excepción de los objetos y String.</ToolTip>
+          <Default>String</Default>
+        </Object>
+        <Object>
+          <ID>NombreDePropiedad</ID>
+          <ToolTip>Reemplazar por el nombre de la propiedad a definir.</ToolTip>
+          <Default>Propiedad</Default>
+        </Object>
+
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[NombreEsquemaCrm("$NombreEsquemaCRMAtributo$")]
+        		        public $TipoDato$ $NombreDePropiedad$ { get; set; }$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
