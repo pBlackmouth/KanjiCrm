@@ -1,0 +1,8 @@
+﻿Los rangos de EventoID para esta sección son de 1601 -> 1800.
+
+1601 - RegistroErrorIncompletoException
+1602 - NotificacionCorreoException
+1603 - EnviarCorreoEventoSistemaException
+1604 - AsociarArticuloBCException
+
+1800 - TestRegistroErrorException  //Este error deberá de desaparecer, solo fue usado para pruebas.

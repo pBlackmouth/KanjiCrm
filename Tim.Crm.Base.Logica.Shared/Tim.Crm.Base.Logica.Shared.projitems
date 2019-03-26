@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{1cb02ad9-a964-4ee5-a505-19045bccb87e}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fdb6d8d1-2ebf-415b-84f4-cbf28ef34c0f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tim.Crm.Base.Logica.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AdaptadorCLN.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdaptadorCLNExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Acciones.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\AccionesExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\ClaseLogica.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensiones\Extensiones.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logica\Utilerias.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logica\UtileriasDiasLaborales.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logica\UtileriasGenerales.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logica\UtileriasMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Logica\ExtUtileriasPlugins.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Logica\UtileriasPlugins.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Soporte\ComparadorDia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Soporte\Metadata.cs" />
+  </ItemGroup>
+</Project>

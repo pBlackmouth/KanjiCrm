@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Kanji - Clase Entidad</Name>
+    <Description>Genera una clase que representa una Entidad de Dynamics CRM a partir de las librerias del Framework de Ti-M</Description>
+    <Icon>Tim.Kanji.IT.Entidad.ico</Icon>
+    <TemplateID>2db2818b-2113-4080-9c28-2a11fef50643</TemplateID>
+    <AppliesTo>CSharp</AppliesTo>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Entidad.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">Entidad.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

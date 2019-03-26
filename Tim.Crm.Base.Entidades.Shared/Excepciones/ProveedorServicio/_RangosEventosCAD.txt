@@ -1,0 +1,4 @@
+﻿Los rangos de EventoID para esta sección son de 1201 -> 1400.
+
+1201 - ConexionCRMException
+1202 - ArchivoConfiguracionException

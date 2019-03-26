@@ -1,0 +1,331 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29B304ED-2038-4102-8A39-19194B68CD30}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EscenariosWebTest</RootNamespace>
+    <AssemblyName>EscenariosWebTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.0.7\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.0.7\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ComparacionFechas.aspx" />
+    <Content Include="ConsultaArticulosBC.aspx" />
+    <Content Include="ConsultaCorreo.aspx" />
+    <Content Include="ConsultaElementoCRM.aspx" />
+    <Content Include="ConsultaNativaCRM.aspx" />
+    <Content Include="ConsultaOrdenada.aspx" />
+    <Content Include="ConsultarDiaNoLaboral.aspx" />
+    <Content Include="ConsultarElementos.aspx" />
+    <Content Include="ConsultarEntidadRelacionada.aspx" />
+    <Content Include="ConsultarHorarioLaboral.aspx" />
+    <Content Include="ConsultarTareasa.aspx" />
+    <Content Include="ConsultarUsuario.aspx" />
+    <Content Include="CrearArticuloBC.aspx" />
+    <Content Include="CrearLlamadaTelefonica.aspx" />
+    <Content Include="CrearUrlSharepoint.aspx" />
+    <Content Include="Crm365Connection.aspx" />
+    <Content Include="DecodeHtml.aspx" />
+    <Content Include="DeserializarObjeto.aspx" />
+    <Content Include="KJson.aspx" />
+    <Content Include="MapeoEntidades.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Constantes.cs" />
+    <Compile Include="ComparacionFechas.aspx.cs">
+      <DependentUpon>ComparacionFechas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComparacionFechas.aspx.designer.cs">
+      <DependentUpon>ComparacionFechas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaArticulosBC.aspx.cs">
+      <DependentUpon>ConsultaArticulosBC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaArticulosBC.aspx.designer.cs">
+      <DependentUpon>ConsultaArticulosBC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCorreo.aspx.cs">
+      <DependentUpon>ConsultaCorreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaCorreo.aspx.designer.cs">
+      <DependentUpon>ConsultaCorreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaElementoCRM.aspx.cs">
+      <DependentUpon>ConsultaElementoCRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaElementoCRM.aspx.designer.cs">
+      <DependentUpon>ConsultaElementoCRM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaNativaCRM.aspx.cs">
+      <DependentUpon>ConsultaNativaCRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaNativaCRM.aspx.designer.cs">
+      <DependentUpon>ConsultaNativaCRM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaOrdenada.aspx.cs">
+      <DependentUpon>ConsultaOrdenada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaOrdenada.aspx.designer.cs">
+      <DependentUpon>ConsultaOrdenada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarDiaNoLaboral.aspx.cs">
+      <DependentUpon>ConsultarDiaNoLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarDiaNoLaboral.aspx.designer.cs">
+      <DependentUpon>ConsultarDiaNoLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarElementos.aspx.cs">
+      <DependentUpon>ConsultarElementos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarElementos.aspx.designer.cs">
+      <DependentUpon>ConsultarElementos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEntidadRelacionada.aspx.cs">
+      <DependentUpon>ConsultarEntidadRelacionada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarEntidadRelacionada.aspx.designer.cs">
+      <DependentUpon>ConsultarEntidadRelacionada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarHorarioLaboral.aspx.cs">
+      <DependentUpon>ConsultarHorarioLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarHorarioLaboral.aspx.designer.cs">
+      <DependentUpon>ConsultarHorarioLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarTareasa.aspx.cs">
+      <DependentUpon>ConsultarTareasa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarTareasa.aspx.designer.cs">
+      <DependentUpon>ConsultarTareasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearArticuloBC.aspx.cs">
+      <DependentUpon>CrearArticuloBC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearArticuloBC.aspx.designer.cs">
+      <DependentUpon>CrearArticuloBC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearUrlSharepoint.aspx.cs">
+      <DependentUpon>CrearUrlSharepoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearUrlSharepoint.aspx.designer.cs">
+      <DependentUpon>CrearUrlSharepoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Campus.cs" />
+    <Compile Include="Entidades\Cuenta.cs" />
+    <Compile Include="Entidades\LlamadaTelefonica.cs" />
+    <Compile Include="ConsultarUsuario.aspx.cs">
+      <DependentUpon>ConsultarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuario.aspx.designer.cs">
+      <DependentUpon>ConsultarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Contexto.cs" />
+    <Compile Include="CrearLlamadaTelefonica.aspx.cs">
+      <DependentUpon>CrearLlamadaTelefonica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearLlamadaTelefonica.aspx.designer.cs">
+      <DependentUpon>CrearLlamadaTelefonica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Crm365Connection.aspx.cs">
+      <DependentUpon>Crm365Connection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Crm365Connection.aspx.designer.cs">
+      <DependentUpon>Crm365Connection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DecodeHtml.aspx.cs">
+      <DependentUpon>DecodeHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DecodeHtml.aspx.designer.cs">
+      <DependentUpon>DecodeHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeserializarObjeto.aspx.cs">
+      <DependentUpon>DeserializarObjeto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeserializarObjeto.aspx.designer.cs">
+      <DependentUpon>DeserializarObjeto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Contacto.cs" />
+    <Compile Include="Entidades\Oportunidad.cs" />
+    <Compile Include="Entidades\PhoneCall.cs" />
+    <Compile Include="Entidades\Programa.cs" />
+    <Compile Include="Entidades\Prospecto.cs" />
+    <Compile Include="Entidades\Tarea.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="KJson.aspx.cs">
+      <DependentUpon>KJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KJson.aspx.designer.cs">
+      <DependentUpon>KJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapeoEntidades.aspx.cs">
+      <DependentUpon>MapeoEntidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapeoEntidades.aspx.designer.cs">
+      <DependentUpon>MapeoEntidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\CLArticuloBC.cs" />
+    <Compile Include="Servicios\CLCuenta.cs" />
+    <Compile Include="Servicios\CLError.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tim.Crm.AdministradorErrores\Tim.Crm.AdministradorErrores.csproj">
+      <Project>{137b64a4-565e-4f5a-8782-692fb292b03f}</Project>
+      <Name>Tim.Crm.AdministradorErrores</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tim.Crm.Base.Entidades\Tim.Crm.Base.Entidades.csproj">
+      <Project>{833f92e4-ba4f-46be-b707-d176e5d1fc76}</Project>
+      <Name>Tim.Crm.Base.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tim.Crm.Base.Logica\Tim.Crm.Base.Logica.csproj">
+      <Project>{32519a8d-9b7f-41ef-b226-ff33120580b6}</Project>
+      <Name>Tim.Crm.Base.Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tim.Crm.ProveedorServicio\Tim.Crm.ProveedorServicio.csproj">
+      <Project>{805f66f4-f0b7-409b-9856-8747baecc4e7}</Project>
+      <Name>Tim.Crm.ProveedorServicio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63680</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63680/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+﻿Los rangos de EventoID para esta sección son de 1801 -> 2000.
+
+1801 - ObtenerElementoException
+1802 - ObtenerListadoException
+1803 - GuardarException
+1804 - AsignarException
+1805 - EliminarException

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{91087fab-6789-4a9a-8802-6db3f3d8f84c}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>279b6a7d-1791-4920-9bb8-719beb228a1e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tim.Crm.Base.Entidades.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\ControlWebFormulario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\IdentificadorCRM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\IgnorarPropiedad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\NombreEsquemaCrm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\NombreParaMostrar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\PropiedadBusqueda.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\Requerido.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Atributos\TipoDatoCrm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\Entidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\EntidadCrm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\EntidadCrmObsoleta.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\InfoDeserializar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\InfoEntidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\InfoPropiedad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enumeraciones\Enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enumeraciones\EnumsEstadoEntidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EstadosEntidad\Base\CambioEstadoEntidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EstadosEntidad\Base\EstadoEntidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EstadosEntidad\esEstadoComun.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EstadosEntidad\esListaMarketing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\AsociarArticuloBCException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\EnviarCorreoEventoSistemaException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\NotificacionCorreoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\RegistroErrorIncompletoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\TestRegistroErrorException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Base\TIMException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\DeserializacionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\EntidadIDNuloException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\EntidadNombreEsquemaNuloException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\EstadoEntidadNoDefinidoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\ExpresionDeCondicionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\ExpresionDeOrdenamientoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\MapeoEntidadException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\ParametroVacioNuloException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\EventoInformativoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Logica\AsignarException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Logica\EliminarException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Logica\GuardarException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Logica\ObtenerElementoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Logica\ObtenerListadoException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\EjecucionStepException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\EntidadPrincipalException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\NullPluginContextException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\ProveedorServicio\ArchivoConfiguracionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\ProveedorServicio\ConexionCRMException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensiones\Extensiones.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfases\IAsignable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfases\IEstadoEntidad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfases\IObservador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfases\IRegistroError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internas\EntidadRelacionada.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Internas\Orden.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Base\D365PluginBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Base\PluginBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Base\PluginContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\MetadataPaso.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\SdkEnsambladoPlugin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\SdkFiltroMensaje.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\SdkMensaje.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\SdkMensajeRegistroPaso.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Entidades\SdkTipoPlugin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\Enumeraciones\Enumeraciones.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\AlertaError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\ArticuloBC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Contacto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\CorreoElectronico.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\EventoSistema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\ManejoError\RegistroError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\MensajeAdmin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\MensajeError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\PlantillaArticuloBC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\PlantillaCorreoEventoSistema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\ReglaCalendario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Soporte\Dia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Soporte\DiaNoLaboral.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Soporte\HorarioLaboral.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Soporte\PeriodoVacacional.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Tema.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\UbicacionDocumento.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Sistema\Usuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Base\OperadoresComparacion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\CrmActivityParty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\CrmLinkEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\CrmLockup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\CrmPicklist.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\CrmUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Delegados.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Entero.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Fecha.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Respuesta.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilidades\Serializar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\_RangosEventosCGE.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Excepciones\Entidades\_RangosEventosEntidades.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Excepciones\Logica\_RangoEventosLogica.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\_RangosEventosEnsamblados.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Excepciones\ProveedorServicio\_RangosEventosCAD.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+﻿Los rangos de EventoID para esta sección son de 3001 -> 3500.
+
+3001 - EjecucionStepException
+3002 - EntidadPrincipalException
+3003 - NullPluginContextException

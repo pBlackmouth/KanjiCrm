@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace PruebasWeb
+{
+    public partial class DecodeHtml : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            string htmlEncoded = "0x800a139e - JavaScript runtime error: [$injector:modulerr] http://errors.angularjs.org/1.5.8/$injector/modulerr?p0=TimInvoicesApp&p1=Error%3A%20%5B%24injector%3Amodulerr%5D%20http%3A%2F%2Ferrors.angularjs.org%2F1.5.8%2F%24injector%2Fmodulerr%3Fp0%3DsvcXrmForms%26p1%3DError%253A%2520%255B%2524injector%253Anomod%255D%2520http%253A%252F%252Ferrors.angularjs.org%252F1.5.8%252F%2524injector%252Fnomod%253Fp0%253DsvcXrmForms%250A%2520%2520%2520at%2520Anonymous%2520function%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A41%253A93)%250A%2520%2520%2520at%2520b%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A40%253A123)%250A%2520%2520%2520at%2520Anonymous%2520function%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A40%253A378)%250A%2520%2520%2520at%2520Anonymous%2520function%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A55%253A469)%250A%2520%2520%2520at%2520q%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A23%253A353)%250A%2520%2520%2520at%2520g%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A55%253A319)%250A%2520%2520%2520at%2520Anonymous%2520function%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A55%253A477)%250A%2520%2520%2520at%2520q%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A23%253A353)%250A%2520%2520%2520at%2520g%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A55%253A319)%250A%2520%2520%2520at%2520cb%2520(http%253A%252F%252Flocalhost%253A8945%252FWork%252Fsrc%252FKanjiJs%252F_scripts%252FTim.Crm.Kanji.2.0.1.js%253A59%253A330)%0A%20%20%20at%20Anonymous%20function%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A56%3A113)%0A%20%20%20at%20q%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A23%3A353)%0A%20%20%20at%20g%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A55%3A319)%0A%20%20%20at%20Anonymous%20function%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A55%3A477)%0A%20%20%20at%20q%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A23%3A353)%0A%20%20%20at%20g%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A55%3A319)%0A%20%20%20at%20cb%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A59%3A330)%0A%20%20%20at%20c%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A36%3A388)%0A%20%20%20at%20Bc%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A37%3A172)%0A%20%20%20at%20fe%20(http%3A%2F%2Flocalhost%3A8945%2FWork%2Fsrc%2FKanjiJs%2F_scripts%2FTim.Crm.Kanji.2.0.1.js%3A36%3A1)";
+
+            string htmlDecoded = HttpUtility.HtmlEncode(htmlEncoded);
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿Los rangos de EventoID para esta sección son de 1001 -> 1200.
+
+1001 - MapeoEntidadException
+1002 - ExpresionDeOrdenamientoException
+1003 - ExpresionDeCondicionException
+1004 - DeserializacionException
+1005 - ParametroVacioNuloException
+1006 - EntidadIDNuloException
+1007 - EntidadNombreEsquemaNuloException
+1008 - EstadoEntidadNoDefinidoException
