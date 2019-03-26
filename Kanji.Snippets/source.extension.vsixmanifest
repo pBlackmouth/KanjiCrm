@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="79a16f5e-ce13-448b-b36c-eee51d2dc1a3" Version="1.0" Language="en-US" Publisher="franciscoba" />
+        <DisplayName>Kanji.Snippets</DisplayName>
+        <Description xml:space="preserve">A snippet pack for Visual Studio</Description>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Preview.png</PreviewImage>
+        <Tags>snippets</Tags>
+    </Metadata>
+    <Installation>
+        <!--Microsoft.VisualStudio.Pro includes all SKUs such as Community, Pro, Ultimate and Enterprise-->
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="14.0" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="15.0" />
+        <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Snippets\snippets.pkgdef" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Contexto" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Contexto;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Entidad" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Entidad;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Servicio" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Servicio;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Contexto.Ensamblado" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Contexto.Ensamblado;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Plugin" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Plugin;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.TIMException" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.TIMException;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    </Assets>
+</PackageManifest>

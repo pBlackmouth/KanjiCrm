@@ -1,0 +1,41 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2008/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Kanji - Entity Reference CRM</Title>
+      <Author>Tecnologías de Información Móvil</Author>
+      <Description>Crea una propiedad de tipo Entity Reference para el SDK TIM.</Description>
+      <Shortcut>kcrmer</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>NombreEsquemaCRMAtributo</ID>
+          <ToolTip>Reemplazar por el nombre de esquema del atributo a mapear.</ToolTip>
+          <Default>Nombre_de_esquema_de_atributo</Default>
+        </Literal>
+        <Literal>
+          <ID>NombreEsquemaCRMEntidadRelacionada</ID>
+          <ToolTip>Reemplazar por el nombre de esquema de la entidad relacionada.</ToolTip>
+          <Default>Nombre_de_esquema_de_entidad_relacionada</Default>
+        </Literal>
+        <Object>
+          <ID>TipoDato</ID>
+          <Type>Entidades.CrmLookup</Type>
+          <ToolTip>Los tipos de datos soportados para esta propiedad son: Guid? o CrmLookup.</ToolTip>
+          <Default>CrmLookup</Default>
+        </Object>
+        <Object>
+          <ID>NombreDePropiedad</ID>
+          <ToolTip>Reemplazar por el nombre de la propiedad a definir.</ToolTip>
+          <Default>Propiedad</Default>
+        </Object>
+
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[[NombreEsquemaCrm("$NombreEsquemaCRMAtributo$")]
+        		        [TipoDatoCrm(eTipoDatoCRM.EntityReference, "$NombreEsquemaCRMEntidadRelacionada$")]
+        		        public $TipoDato$ $NombreDePropiedad$ { get; set; }$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
