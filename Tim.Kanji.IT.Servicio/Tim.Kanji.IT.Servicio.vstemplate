@@ -7,7 +7,7 @@
     <TemplateID>8c5430ca-8203-41ec-a058-529fab815f2a</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
-    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <DefaultName>Servicio.cs</DefaultName>
   </TemplateData>

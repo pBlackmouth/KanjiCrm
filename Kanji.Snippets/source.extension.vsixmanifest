@@ -21,11 +21,5 @@
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Snippets\snippets.pkgdef" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Contexto" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Contexto;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Entidad" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Entidad;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Servicio" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Servicio;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Contexto.Ensamblado" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Contexto.Ensamblado;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.Plugin" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.Plugin;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Tim.Kanji.IT.TIMException" TargetVersion="15.0" d:TargetPath="|Tim.Kanji.IT.TIMException;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
     </Assets>
 </PackageManifest>

@@ -16,20 +16,22 @@ namespace PruebasWeb
         {
             using (Contexto ctx = new Contexto()) {
 
-                Cuenta cuenta = new Cuenta()
-                {
-                    CorreoElectronico = "someone9@example.com",
-                    Nombre = "El esquí alpino (ejemplo)",
-                    OperadorOR = true
+                //Cuenta cuenta = new Cuenta()
+                //{
+                //    CorreoElectronico = "someone9@example.com",
+                //    Nombre = "El esquí alpino (ejemplo)",
+                //    OperadorOR = true
 
-                };
+                //};
 
-               
 
-                Respuesta resp = ctx.Guardar(cuenta);
-                
 
-                List<Cuenta> ListaCuentas = ctx.ObtenerListado<Cuenta>(cuenta);
+                //Respuesta resp = ctx.Guardar(cuenta);
+
+
+                //List<Cuenta> ListaCuentas = ctx.ObtenerListado<Cuenta>(cuenta);
+
+                List<Cuenta> ListaCuentas = ctx.ObtenerListado<Cuenta>();
 
             }
         }

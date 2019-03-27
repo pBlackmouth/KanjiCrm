@@ -7,7 +7,7 @@
     <TemplateID>27b28912-9288-4c27-9e5f-eeeb58abf412</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
-    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <DefaultName>Contexto.cs</DefaultName>
   </TemplateData>

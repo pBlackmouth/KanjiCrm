@@ -7,7 +7,7 @@
     <TemplateID>f836e6dc-3b7c-4056-bb35-2208ec42bdd9</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
-    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <DefaultName>Exception.cs</DefaultName>
   </TemplateData>

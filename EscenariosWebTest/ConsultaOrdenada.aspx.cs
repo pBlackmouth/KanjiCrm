@@ -43,7 +43,7 @@ namespace PruebasWeb
                         };
 
                         List<Cuenta> cuentas = ctx.ObtenerListado<Cuenta>(cuenta);
-
+                        
                         String jsonCTA = cuentas.FormatoJSON<Cuenta>();                        
 
                         GridView1.DataSource = cuentas;
