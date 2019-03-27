@@ -15,7 +15,7 @@ namespace Tim.Crm.Base.Entidades
     /// <summary>
     /// 
     /// </summary>
-    internal class InfoEntidad : IRegistroError
+    public  class InfoEntidad : IRegistroError
     {
         ///Gris
         /// <summary>

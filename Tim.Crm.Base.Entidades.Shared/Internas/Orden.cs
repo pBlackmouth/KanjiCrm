@@ -5,7 +5,7 @@ namespace Tim.Crm.Base.Entidades
     /// <summary>
     /// 
     /// </summary>
-    internal class Orden
+    public sealed class Orden
     {
         /// <summary>
         /// 

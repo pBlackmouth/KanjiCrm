@@ -36,16 +36,16 @@ namespace Tim.Crm.Base.Entidades
 
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="ObjectoSerializado"></param>
-        /// <param name="ObtenerValoresDesdeString"></param>
-        public AlertaError(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
-            : base(ObjectoSerializado, ObtenerValoresDesdeString)
-        {
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="ObjectoSerializado"></param>
+        ///// <param name="ObtenerValoresDesdeString"></param>
+        //public AlertaError(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
+        //    : base(ObjectoSerializado, ObtenerValoresDesdeString)
+        //{
 
-        }
+        //}
 
 
 

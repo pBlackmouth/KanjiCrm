@@ -39,11 +39,11 @@ namespace PruebasWeb
 
         }
 
-        public Usuario(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
-            : base(ObjectoSerializado, ObtenerValoresDesdeString)
-        {
+        //public Usuario(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
+        //    : base(ObjectoSerializado, ObtenerValoresDesdeString)
+        //{
 
-        }
+        //}
 
         //TODO: Definición de los constructores adicionales.
 

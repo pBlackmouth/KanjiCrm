@@ -5,6 +5,7 @@ using Microsoft.Xrm.Sdk;
 using Tim.Crm.Base.Entidades;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
+using Tim.Crm.Base.Entidades.Extension;
 
 namespace PruebasWeb
 {
@@ -13,7 +14,7 @@ namespace PruebasWeb
     /// </summary>
     [Serializable]
     [NombreEsquemaCrm("contact")]
-    public partial class Prospecto : EntidadCrm
+    public partial class Prospecto : EntidadCrmExtended
     {
 
         #region CONSTRUCTORES

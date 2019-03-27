@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>59868296-cd70-4fd6-9f97-395ec64b1adf</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tim.Crm.Base.Entidades.Extension.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Contacto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntidadCrmExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntidadCrmMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SdkEnsambladoPlugin.cs" />
+  </ItemGroup>
+</Project>

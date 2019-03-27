@@ -39,11 +39,11 @@ namespace Tim.Crm.Base.Entidades.Plugins
 
         }
 
-        public SdkMensajeRegistroPaso(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
-            : base(ObjectoSerializado, ObtenerValoresDesdeString)
-        {
+        //public SdkMensajeRegistroPaso(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
+        //    : base(ObjectoSerializado, ObtenerValoresDesdeString)
+        //{
 
-        }
+        //}
 
         //TODO: Definición de los constructores adicionales.
 

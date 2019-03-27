@@ -45,11 +45,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{F9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.Kanji.Snippets", "Kanji.Snippets\Tim.Kanji.Snippets.csproj", "{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Tim.Crm.Base.Entidades.Extension.Shared", "Tim.Crm.Base.Entidades.Extension.Shared\Tim.Crm.Base.Entidades.Extension.Shared.shproj", "{59868296-CD70-4FD6-9F97-395EC64B1ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.Crm.Base.Entidades.Extension", "Tim.Crm.Base.Entidades.Extension\Tim.Crm.Base.Entidades.Extension.csproj", "{14CB3309-A262-467A-93C2-5F01AF0E40B0}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Tim.Crm.Base.Entidades.Extension.Shared\Tim.Crm.Base.Entidades.Extension.Shared.projitems*{14cb3309-a262-467a-93c2-5f01af0e40b0}*SharedItemsImports = 4
 		Tim.Crm.Base.Entidades.Shared\Tim.Crm.Base.Entidades.Shared.projitems*{279b6a7d-1791-4920-9bb8-719beb228a1e}*SharedItemsImports = 13
 		Tim.Crm.Base.Logica.Shared\Tim.Crm.Base.Logica.Shared.projitems*{32519a8d-9b7f-41ef-b226-ff33120580b6}*SharedItemsImports = 4
 		Tim.Crm.ProveedorServicio.Shared\Tim.Crm.ProveedorServicio.Shared.projitems*{375c7a44-8c79-4fbb-a77b-f34648c43d67}*SharedItemsImports = 13
+		Tim.Crm.Base.Entidades.Extension.Shared\Tim.Crm.Base.Entidades.Extension.Shared.projitems*{59868296-cd70-4fd6-9f97-395ec64b1adf}*SharedItemsImports = 13
 		Tim.Crm.ProveedorServicio.Shared\Tim.Crm.ProveedorServicio.Shared.projitems*{805f66f4-f0b7-409b-9856-8747baecc4e7}*SharedItemsImports = 4
 		Tim.Crm.Base.Entidades.Shared\Tim.Crm.Base.Entidades.Shared.projitems*{833f92e4-ba4f-46be-b707-d176e5d1fc76}*SharedItemsImports = 4
 		Tim.Crm.Base.Logica.Shared\Tim.Crm.Base.Logica.Shared.projitems*{fdb6d8d1-2ebf-415b-84f4-cbf28ef34c0f}*SharedItemsImports = 13
@@ -107,6 +113,10 @@ Global
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CB3309-A262-467A-93C2-5F01AF0E40B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CB3309-A262-467A-93C2-5F01AF0E40B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CB3309-A262-467A-93C2-5F01AF0E40B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CB3309-A262-467A-93C2-5F01AF0E40B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +140,8 @@ Global
 		{29B304ED-2038-4102-8A39-19194B68CD30} = {8DEC7967-6606-44FA-967E-90C81EDF877B}
 		{F9462525-54CD-44F1-83C5-8E36D4FB62E1} = {B6A52116-3F54-46E6-B0F1-AD5F53110409}
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE} = {F9462525-54CD-44F1-83C5-8E36D4FB62E1}
+		{59868296-CD70-4FD6-9F97-395EC64B1ADF} = {B88451C3-9E98-4962-BCF6-8C040C193975}
+		{14CB3309-A262-467A-93C2-5F01AF0E40B0} = {CEC99FBE-22CB-447B-8624-6EDCCA488312}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90101ECC-353D-4910-B15F-66D95F67BF35}

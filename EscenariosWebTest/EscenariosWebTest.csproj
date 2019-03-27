@@ -277,6 +277,10 @@
       <Project>{137b64a4-565e-4f5a-8782-692fb292b03f}</Project>
       <Name>Tim.Crm.AdministradorErrores</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tim.Crm.Base.Entidades.Extension\Tim.Crm.Base.Entidades.Extension.csproj">
+      <Project>{14cb3309-a262-467a-93c2-5f01af0e40b0}</Project>
+      <Name>Tim.Crm.Base.Entidades.Extension</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tim.Crm.Base.Entidades\Tim.Crm.Base.Entidades.csproj">
       <Project>{833f92e4-ba4f-46be-b707-d176e5d1fc76}</Project>
       <Name>Tim.Crm.Base.Entidades</Name>

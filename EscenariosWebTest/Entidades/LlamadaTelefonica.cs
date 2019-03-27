@@ -4,6 +4,7 @@ using Tim.Crm.Base.Entidades.Enumeraciones;
 using Microsoft.Xrm.Sdk;
 using Tim.Crm.Base.Entidades;
 using System.Xml.Serialization;
+using Tim.Crm.Base.Entidades.Extension;
 
 namespace PruebasWeb
 {
@@ -12,7 +13,7 @@ namespace PruebasWeb
     /// </summary>
     [Serializable]
     [NombreEsquemaCrm("Nombre_de_esquema")]
-    public partial class LlamadaTelefonica : EntidadCrm
+    public partial class LlamadaTelefonica : EntidadCrmExtended
     {
 
         #region CONSTRUCTORES

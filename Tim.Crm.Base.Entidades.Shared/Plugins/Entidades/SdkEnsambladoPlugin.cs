@@ -39,11 +39,7 @@ namespace Tim.Crm.Base.Entidades.Plugins
 
         }
 
-        public SdkEnsambladoPlugin(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
-            : base(ObjectoSerializado, ObtenerValoresDesdeString)
-        {
-
-        }
+        
 
         //TODO: Definición de los constructores adicionales.
 

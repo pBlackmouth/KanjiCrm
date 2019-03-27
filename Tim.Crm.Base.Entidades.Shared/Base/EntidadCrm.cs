@@ -12,7 +12,6 @@ using Tim.Crm.Base.Entidades.Sistema;
 using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 using System.Web.Script.Serialization;
-using Newtonsoft.Json;
 using System.Xml;
 
 
@@ -22,69 +21,62 @@ namespace Tim.Crm.Base.Entidades
     /// 
     /// </summary>
     [Serializable]
-    public class EntidadCrm: Entity, IRegistroError
+    public class EntidadCrm: IRegistroError
     {
         #region VARIABLES Y PROPIEDADES
 
-        ///Gris
+        
         /// <summary>
         /// Propiedad que almacena la información de las propiedads de la clase entidad
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        private InfoEntidad infoEntidad = null;
-
-        ///Gris
+        protected internal InfoEntidad informacionPropiedad { get; set; }
+        
         /// <summary>
         /// Propiedad utilizada para acceder a la clase de registro de  errores.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        private RegistroError registrar = null;
-
-        ///Gris
+        protected internal RegistroError registrar { get; set; }
+       
         /// <summary>
-        /// Propiedad para almacenar el estado de la deserialización.
+        /// Campo privado identificador.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public InfoDeserializar Deserializacion = null;
-
-
-
-
+        protected internal Guid? _id { get; set; }
 
         ///Gris
         /// <summary>
         /// Tipo de entidad de la instancia actual
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        private Type TipoEntidadActualTIM;
+        protected internal Type TipoEntidadActualTIM { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [XmlIgnore]
+        [Ignorar]
+        protected internal Dictionary<string, string> NodosXML { get; set; }
 
 
         ///Gris
         /// <summary>
-        /// Campo privado identificador.
+        /// Propiedad para almacenar el estado de la deserialización.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        private Guid? _id = null;
-
-
-        ///Gris
+        public virtual InfoDeserializar Deserializacion { get; set; }     
+     
         /// <summary>
         /// Propiedad que obtiene o establece  el identificador en CRM
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public Guid? ID
+        public virtual Guid? ID
         {
             get { return _id; }
             set
@@ -106,18 +98,16 @@ namespace Tim.Crm.Base.Entidades
         /// Define el nombre de esquema CRM para esta instancia.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public string NombreEsquema { get; set; }
+        public virtual string NombreEsquema { get; set; }
 
 
         /// <summary>
         /// Delegado que define la vista a ser consultada.
         /// </summary> 
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public ColumnasDeMetodo VistaAConsultar;
+        public virtual ColumnasDeMetodo VistaAConsultar { get; set; }
 
         /// <summary>
         /// Propiedad que define si la consulta actual es una consulta con operador OR
@@ -125,9 +115,8 @@ namespace Tim.Crm.Base.Entidades
         /// Valor por Default: false;
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public bool OperadorOR { get; set; }
+        public virtual bool OperadorOR { get; set; }
 
         /// <summary>
         /// Indica que las propiedades definidas como requeridas, 
@@ -135,9 +124,8 @@ namespace Tim.Crm.Base.Entidades
         /// Valor por Defult: true
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public bool ValidarAtributosRequeridos { get; set; }
+        public virtual bool ValidarAtributosRequeridos { get; set; }
 
         /// <summary>
         /// Define las propiedades por las que será ordenada la consulta.
@@ -145,13 +133,8 @@ namespace Tim.Crm.Base.Entidades
         /// asc por defecto.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public string OrdenarPor { get; set; }
-
-
-
-
+        public virtual string OrdenarPor { get; set; }
 
 
         //TODO: Definir propiedades para el uso de paginación.
@@ -160,23 +143,12 @@ namespace Tim.Crm.Base.Entidades
         /// Propiedad utilizada para definir los registros por página.
         /// </summary>
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public int RegistrosPorPagina { get; set; }
-
-
-        /// <summary>
-        /// 
-        /// </summary>
-        [XmlIgnore]
-        [JsonIgnore]
-        [Ignorar]
-        private Dictionary<string, string> NodosXML = null;
+        public virtual int RegistrosPorPagina { get; set; }
 
         [XmlIgnore]
-        [JsonIgnore]
         [Ignorar]
-        public List<EntidadRelacionada> EntidadesRelacionadas { get; set; }
+        public virtual List<EntidadRelacionada> EntidadesRelacionadas { get; set; }
 
         #endregion
 
@@ -209,25 +181,7 @@ namespace Tim.Crm.Base.Entidades
             EntidadTIM(entidad);
         }
 
-        ///Gris
-        /// <summary>
-        /// Constructor que recibe un objeto serializado y un boleano que indica si los valores se deben de obetener desde el  objeto string serializado.
-        /// </summary>
-        /// <param name="ObjetoSerializado"></param>
-        /// <param name="ObtenerValoresDesdeString"></param>
-        public EntidadCrm(String ObjetoSerializado, bool ObtenerValoresDesdeString = false)
-        {
-            Inicializar();
-
-            if (ObtenerValoresDesdeString)
-            {
-                ObtenerNodosXML(ObjetoSerializado);
-            }
-            else
-            {
-                DeserializarObjeto(ObjetoSerializado);
-            }
-        }
+        
 
         #endregion
 
@@ -255,13 +209,13 @@ namespace Tim.Crm.Base.Entidades
                         entidadCRM.LogicalName = this.NombreEsquema;
 
                         //Se valida que el objeto InfoEntidad no sea nula.
-                        if (this.infoEntidad != null)
+                        if (this.informacionPropiedad != null)
                         {
                             //Se valida que se hayan inicializado las propiedades de la clase.
-                            if (this.infoEntidad.PropiedadesTIM != null)
+                            if (this.informacionPropiedad.PropiedadesTIM != null)
                             {
                                 //Se recorren las propiedades de la clase para ser mapeadas.
-                                foreach (InfoPropiedad propiedadActualTIM in this.infoEntidad.PropiedadesTIM)
+                                foreach (InfoPropiedad propiedadActualTIM in this.informacionPropiedad.PropiedadesTIM)
                                 {
                                     //Verifica que se haya definido un nombre de esquema para la propiedad y que no se ignore.
                                     if (!string.IsNullOrEmpty(propiedadActualTIM.NombreEsquema) && !string.IsNullOrWhiteSpace(propiedadActualTIM.NombreEsquema) && !propiedadActualTIM.IgnorarPropiedad)
@@ -363,12 +317,12 @@ namespace Tim.Crm.Base.Entidades
         /// <returns>Lista de atributos.</returns>
         public string[] Atributos()
         {
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+            if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
             {
                 ObtenerPropiedadesDeClaseTIM();
             }
 
-            return this.infoEntidad == null ? null : this.infoEntidad.Atributos();
+            return this.informacionPropiedad == null ? null : this.informacionPropiedad.Atributos();
         }
 
         /// <summary>
@@ -377,12 +331,12 @@ namespace Tim.Crm.Base.Entidades
         /// <returns>Listado de los nombre lógicos de los atributos CRM.</returns>
         public string[] AtributosConValor()
         {
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+            if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
             {
                 ObtenerPropiedadesDeClaseTIM();
             }
 
-            return this.infoEntidad == null ? null : this.infoEntidad.AtributosConValor();
+            return this.informacionPropiedad == null ? null : this.informacionPropiedad.AtributosConValor();
         }
 
         /// <summary>
@@ -391,12 +345,12 @@ namespace Tim.Crm.Base.Entidades
         /// <returns>Array de ConditionExpression</returns>
         public ConditionExpression[] ObtenerArregloDeCondiciones()
         {
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+            if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
             {
                 ObtenerPropiedadesDeClaseTIM();
             }
 
-            return this.infoEntidad == null ? null : this.infoEntidad.ObtenerArregloDeCondiciones();
+            return this.informacionPropiedad == null ? null : this.informacionPropiedad.ObtenerArregloDeCondiciones();
         }
 
         /// <summary>
@@ -405,12 +359,12 @@ namespace Tim.Crm.Base.Entidades
         /// <returns>Array de ConditionExpression</returns>
         public ConditionExpression[] ObtenerArregloDeCondicionesDeRangos()
         {
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+            if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
             {
                 ObtenerPropiedadesDeClaseTIM();
             }
 
-            return this.infoEntidad == null ? null : this.infoEntidad.ObtenerArregloDeCondicionesDeRangos();
+            return this.informacionPropiedad == null ? null : this.informacionPropiedad.ObtenerArregloDeCondicionesDeRangos();
         }
 
         /// <summary>
@@ -455,7 +409,7 @@ namespace Tim.Crm.Base.Entidades
 
             if (listaOrden != null)
             {
-                lista = infoEntidad.ObtenerOrdenamientos(listaOrden);
+                lista = informacionPropiedad.ObtenerOrdenamientos(listaOrden);
             }
 
             return lista;
@@ -467,7 +421,7 @@ namespace Tim.Crm.Base.Entidades
         /// </summary>
         public void VerificarRequeridos()
         {
-            this.infoEntidad.VerificarRequeridos();
+            this.informacionPropiedad.VerificarRequeridos();
         }
 
         /// <summary>
@@ -495,7 +449,7 @@ namespace Tim.Crm.Base.Entidades
         {
             string cadena = Serializar.JSON(this, ConFormato);
             cadena = cadena.Substring(0, cadena.Length - 1);
-            cadena += infoEntidad.ExtenderJSON(ConFormato);
+            cadena += informacionPropiedad.ExtenderJSON(ConFormato);
             cadena += "}";
             return cadena;
         }
@@ -551,14 +505,14 @@ namespace Tim.Crm.Base.Entidades
         /// <summary>
         /// Inicializa las propiedades de la clase.
         /// </summary>
-        void Inicializar()
+        protected internal void Inicializar()
         {
             //AppDomain currentDomain = AppDomain.CurrentDomain;
             //currentDomain.AssemblyResolve += new ResolveEventHandler(Handlers.ResolveAssemblyEventHandler);
             registrar = new RegistroError();
 
             TipoEntidadActualTIM = this.GetType();
-            infoEntidad = new InfoEntidad(this);
+            informacionPropiedad = new InfoEntidad(this);
             ObtenerNombreLogico();
 
 
@@ -577,18 +531,18 @@ namespace Tim.Crm.Base.Entidades
         /// <summary>
         /// Obtiene las propiedades de la clase TIM por medio de Reflection 
         /// </summary>
-        private void ObtenerPropiedadesDeClaseTIM()
+        protected void ObtenerPropiedadesDeClaseTIM()
         {
-            infoEntidad.AsignarPropiedadesTIM();
+            informacionPropiedad.AsignarPropiedadesTIM();
         }
 
         ///Gris
         /// <summary>
         /// Obtiene las propiedades de la clase crm por medio de Reflection 
         /// </summary>
-        private void ObtenerPropiedadesDeClaseCRM(Entity entidad)
+        protected void ObtenerPropiedadesDeClaseCRM(Entity entidad)
         {
-            infoEntidad.AsignarPropiedadesCRM(entidad);
+            informacionPropiedad.AsignarPropiedadesCRM(entidad);
         }
 
 
@@ -596,34 +550,34 @@ namespace Tim.Crm.Base.Entidades
         /// <summary>
         /// Obtiene el nombre de esquema de CRM para la instancia Actual.
         /// </summary>
-        private void ObtenerNombreLogico()
+        protected void ObtenerNombreLogico()
         {
-            NombreEsquema = infoEntidad.NombreEsquema;
+            NombreEsquema = informacionPropiedad.NombreEsquema;
         }
 
         /// <summary>
         /// Vista que obtiene todos los nombres de esquema de todos los atributos de la clase.
         /// </summary>
         /// <returns></returns>
-        private string[] VistaPorDefecto()
+        protected virtual string[] VistaPorDefecto()
         {
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+            if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
             {
                 ObtenerPropiedadesDeClaseTIM();
             }
 
-            return this.infoEntidad == null ? null : this.infoEntidad.Atributos();
+            return this.informacionPropiedad == null ? null : this.informacionPropiedad.Atributos();
         }
 
         /// <summary>
         /// Asigna los valores de la instancia actual, a partir de una entity..
         /// </summary>
         /// <param name="entidad">Entity.</param>
-        private void EntidadTIM(Entity entidad)
+        protected void EntidadTIM(Entity entidad)
         {
             try
             {
-                if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+                if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
                 {
                     ObtenerPropiedadesDeClaseTIM();
                 }
@@ -631,13 +585,13 @@ namespace Tim.Crm.Base.Entidades
                 ObtenerPropiedadesDeClaseCRM(entidad);
 
                 //Validamos que la propiedad PropiedadesCRM no esté vacía.
-                if (infoEntidad.PropiedadesCRM != null)
+                if (informacionPropiedad.PropiedadesCRM != null)
                 {
                     //Validamos que la propiedad PropiedadesTIM no esté vacía.
-                    if (this.infoEntidad.PropiedadesTIM != null)
+                    if (this.informacionPropiedad.PropiedadesTIM != null)
                     {
                         //Recorre las propiedades de la intancia de clase actual.
-                        foreach (InfoPropiedad propiedadActualTIM in this.infoEntidad.PropiedadesTIM)
+                        foreach (InfoPropiedad propiedadActualTIM in this.informacionPropiedad.PropiedadesTIM)
                         {
                             if (propiedadActualTIM.NombreEsquema != null)
                             {
@@ -660,94 +614,23 @@ namespace Tim.Crm.Base.Entidades
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="CadenaSerializada"></param>
-        private void DeserializarObjeto(string CadenaSerializada)
-        {
+        
 
-            if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
-            {
-                ObtenerPropiedadesDeClaseTIM();
-            }
-
-            object objetoDeserializado = null;
-
-            try
-            {
-
-                if (IsJson(CadenaSerializada))
-                {
-                    JavaScriptSerializer js = new JavaScriptSerializer();
-                    objetoDeserializado = js.Deserialize(CadenaSerializada, TipoEntidadActualTIM);
-                }
-                else
-                {
-                    /****************************************************************************************
-                    //Se eliminó el uso de System.IO por que no es permitido en los Plugins o WA en Sandbox
-                    //Usando System.IO
-                    XmlSerializer deserializer = new XmlSerializer(TipoEntidadActualTIM);
-                    CadenaSerializada = ConvertirCaracteresPermitidos(CadenaSerializada); 
-
-                    using (TextReader textReader = new StringReader(CadenaSerializada))
-                    {
-                        objetoDeserializado = deserializer.Deserialize(textReader);
-                    }
-                    ****************************************************************************************/
-
-                    XmlSerializer deserializer = new XmlSerializer(TipoEntidadActualTIM);
-                    CadenaSerializada = ConvertirCaracteresPermitidos(CadenaSerializada);
-
-                    XmlDocument xmlDoc = new XmlDocument();
-                    xmlDoc.LoadXml(CadenaSerializada);
-
-                    CadenaSerializada = JsonConvert.SerializeObject(xmlDoc);
-                    CadenaSerializada = CadenaSerializada.Substring(CadenaSerializada.IndexOf(':') + 1);
-                    CadenaSerializada = CadenaSerializada.Substring(0, CadenaSerializada.LastIndexOf('}'));
-
-                    JavaScriptSerializer js = new JavaScriptSerializer();
-                    objetoDeserializado = js.Deserialize(CadenaSerializada, TipoEntidadActualTIM);
-                }
-
-                if (objetoDeserializado != null)
-                {
-                    if (this.infoEntidad.PropiedadesTIM != null)
-                    {
-                        //Recorre las propiedades de la intancia de clase actual.
-                        foreach (InfoPropiedad propiedadActualObjDes in this.infoEntidad.PropiedadesTIM)
-                        {
-                            if (!propiedadActualObjDes.IgnorarPropiedad || propiedadActualObjDes.EsPropiedadBusqueda)
-                            {
-                                propiedadActualObjDes.Propiedad.SetValue(this, propiedadActualObjDes.Propiedad.GetValue(objetoDeserializado), null);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                CrearErrorDeserializacion(ex, CadenaSerializada);
-            }
+            //TODO:Usar este código para aplicaciones onprem.
+            //public static T ParseXML<T>(this string @this) where T : class
+            //{
+            //    var reader = XmlReader.Create(@this.Trim().ToStream(), new XmlReaderSettings() { ConformanceLevel = ConformanceLevel.Document });
+            //    return new XmlSerializer(typeof(T)).Deserialize(reader) as T;
+            //}
 
 
-        }
-
-        //TODO:Usar este código para aplicaciones onprem.
-        //public static T ParseXML<T>(this string @this) where T : class
-        //{
-        //    var reader = XmlReader.Create(@this.Trim().ToStream(), new XmlReaderSettings() { ConformanceLevel = ConformanceLevel.Document });
-        //    return new XmlSerializer(typeof(T)).Deserialize(reader) as T;
-        //}
-
-
-        ///Gris
-        /// <summary>
-        /// Maneja una excepción causada al deserializar.
-        /// </summary>
-        /// <param name="ex">Excepción.</param>
-        /// <param name="CadenaSerializada">String serializado.</param>
-        private void CrearErrorDeserializacion(Exception ex, string CadenaSerializada)
+            ///Gris
+            /// <summary>
+            /// Maneja una excepción causada al deserializar.
+            /// </summary>
+            /// <param name="ex">Excepción.</param>
+            /// <param name="CadenaSerializada">String serializado.</param>
+            protected internal void CrearErrorDeserializacion(Exception ex, string CadenaSerializada)
         {
             try
             {
@@ -811,18 +694,18 @@ namespace Tim.Crm.Base.Entidades
         /// 
         /// </summary>
         /// <param name="XmlObjetoSerializado"></param>
-        private void ObtenerNodosXML(string XmlObjetoSerializado)
+        protected internal void ObtenerNodosXML(string XmlObjetoSerializado)
         {
             if (!string.IsNullOrEmpty(XmlObjetoSerializado))
             {
                 NodosXML = new Dictionary<string, string>();
 
-                if (this.infoEntidad != null && this.infoEntidad.PropiedadesTIM == null)
+                if (this.informacionPropiedad != null && this.informacionPropiedad.PropiedadesTIM == null)
                 {
                     ObtenerPropiedadesDeClaseTIM();
                 }
 
-                foreach (InfoPropiedad propTIM in this.infoEntidad.PropiedadesTIM)
+                foreach (InfoPropiedad propTIM in this.informacionPropiedad.PropiedadesTIM)
                 {
                     string inicioNodo = string.Format("<{0}>", propTIM.NombrePropiedad);
                     string finNodo = string.Format("</{0}>", propTIM.NombrePropiedad);
@@ -848,7 +731,7 @@ namespace Tim.Crm.Base.Entidades
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        private bool IsJson(string input)
+        protected internal bool IsJson(string input)
         {
             input = input.Trim();
             return input.StartsWith("{") && input.EndsWith("}")
@@ -897,7 +780,7 @@ namespace Tim.Crm.Base.Entidades
         /// </summary>
         /// <param name="CadenaSerializada"></param>
         /// <returns></returns>
-        private String ConvertirCaracteresPermitidos(String CadenaSerializada)
+        protected internal String ConvertirCaracteresPermitidos(String CadenaSerializada)
         {
             String cadena = CadenaSerializada;
 

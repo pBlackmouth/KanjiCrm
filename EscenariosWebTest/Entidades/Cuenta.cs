@@ -3,12 +3,13 @@ using Tim.Crm.Base.Entidades;
 using Tim.Crm.Base.Entidades.Atributos;
 using Microsoft.Xrm.Sdk;
 using Tim.Crm.Base.Entidades.Enumeraciones;
+using Tim.Crm.Base.Entidades.Extension;
 
 namespace PruebasWeb.Modelos
 {
     [Serializable]
     [NombreEsquemaCrm("account")]
-    public partial class Cuenta : EntidadCrm
+    public partial class Cuenta : EntidadCrmExtended
     {
                
         public Cuenta()

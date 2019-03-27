@@ -39,11 +39,11 @@ namespace PruebasWeb._1.Modelos
 
         }
 
-        public Tarea(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
-            : base(ObjectoSerializado, ObtenerValoresDesdeString)
-        {
+        //public Tarea(String ObjectoSerializado, bool ObtenerValoresDesdeString = false)
+        //    : base(ObjectoSerializado, ObtenerValoresDesdeString)
+        //{
 
-        }
+        //}
 
         //TODO: Definición de los constructores adicionales.
 
