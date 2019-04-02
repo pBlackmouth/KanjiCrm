@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <TemplateID>2db2818b-2113-4080-9c28-2a11fef50643</TemplateID>
-    <Name>Kanji - Clase Entidad</Name>
-    <Description>Genera una clase que representa una Entidad de Dynamics CRM a partir de las librerias del Framework de Ti-M</Description>
-    <Icon>Tim.Kanji.IT.Entidad.ico</Icon>
+    <TemplateID>b8bc4dce-cf94-4c57-8371-c494e21605ef</TemplateID>
+    <Name>Kanji - Workflow Activity</Name>
+    <Description>Genera una clase que representa un workflow activity de Dynamics CRM a partir de las librerias del Framework de Ti-M</Description>
+    <Icon>Tim.Kanji.IT.WorkflowActivity.ico</Icon>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <DefaultName>Entidad.cs</DefaultName>
+    <DefaultName>WorkflowActivity.cs</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References>
@@ -17,6 +17,6 @@
         <Assembly>System</Assembly>
       </Reference>
     </References>
-    <ProjectItem ReplaceParameters="true">Entidad.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true">WorkflowActivity.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

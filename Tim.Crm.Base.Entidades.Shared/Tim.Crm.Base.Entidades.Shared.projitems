@@ -59,6 +59,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\EjecucionStepException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\EntidadPrincipalException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\NullPluginContextException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Excepciones\Plugins\NullWorkflowActivityContextException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Excepciones\ProveedorServicio\ArchivoConfiguracionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Excepciones\ProveedorServicio\ConexionCRMException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensiones\Extensiones.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Fecha.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TipoDatos\Respuesta.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilidades\Serializar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkflowActivities\CodeActivityBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkflowActivities\WorkflowActivityContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Excepciones\AdministradorErrores\_RangosEventosCGE.txt" />

@@ -21,7 +21,7 @@ namespace $rootnamespace$
         {
             Crm365SimpleConnection conector = new Crm365SimpleConnection(Constants.ActualConnectionString);
             this.service = conector.GetOrganizationService();
-            Util = new Utilerias(this.service);
+            Util = new Utilerias(this.service, this);
             Ext = new Extensiones(this);
         }
 

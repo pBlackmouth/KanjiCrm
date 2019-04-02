@@ -51,7 +51,7 @@ namespace $rootnamespace$
                     // TODO: dispose managed state (managed objects).
                     //orgContext.Dispose();
                 }
-                servicio = null
+                servicio = null;
                 disposedValue = true;
             }
         }

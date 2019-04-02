@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{F9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.Kanji.Snippets", "Kanji.Snippets\Tim.Kanji.Snippets.csproj", "{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tim.Kanji.IT.WorkflowActivity", "Tim.Kanji.IT.WorflowActivity\Tim.Kanji.IT.WorkflowActivity.csproj", "{647B1B61-5EE1-47F8-956C-7B41610A3063}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Tim.Crm.Base.Entidades.Shared\Tim.Crm.Base.Entidades.Shared.projitems*{279b6a7d-1791-4920-9bb8-719beb228a1e}*SharedItemsImports = 13
@@ -107,6 +109,10 @@ Global
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647B1B61-5EE1-47F8-956C-7B41610A3063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647B1B61-5EE1-47F8-956C-7B41610A3063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647B1B61-5EE1-47F8-956C-7B41610A3063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647B1B61-5EE1-47F8-956C-7B41610A3063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +136,7 @@ Global
 		{29B304ED-2038-4102-8A39-19194B68CD30} = {8DEC7967-6606-44FA-967E-90C81EDF877B}
 		{F9462525-54CD-44F1-83C5-8E36D4FB62E1} = {B6A52116-3F54-46E6-B0F1-AD5F53110409}
 		{E5062B6F-6CD3-427A-AD8B-DC89BA62F2AE} = {F9462525-54CD-44F1-83C5-8E36D4FB62E1}
+		{647B1B61-5EE1-47F8-956C-7B41610A3063} = {CADBAD15-A7E9-4DEF-8969-4D0F2BAFBDD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90101ECC-353D-4910-B15F-66D95F67BF35}

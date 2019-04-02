@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
+    <TemplateID>977f3a70-717b-4e57-9151-4b2df94ee3f9</TemplateID>
     <Name>Kanji - Plugin</Name>
     <Description>Genera una clase que representa un plugin de Dynamics CRM a partir de las librerias del Framework de Ti-M</Description>
     <Icon>Tim.Kanji.IT.Plugin.ico</Icon>
-    <TemplateID>977f3a70-717b-4e57-9151-4b2df94ee3f9</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>

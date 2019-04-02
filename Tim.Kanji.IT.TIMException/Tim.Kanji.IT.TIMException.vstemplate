@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
+    <TemplateID>f836e6dc-3b7c-4056-bb35-2208ec42bdd9</TemplateID>
     <Name>Kanji - TIMException</Name>
     <Description>Excepción para el uso de Kanji. Detalla los errores ocurridos desde la capa más baja.</Description>
     <Icon>Tim.Kanji.IT.TIMException.ico</Icon>
-    <TemplateID>f836e6dc-3b7c-4056-bb35-2208ec42bdd9</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>

@@ -99,25 +99,26 @@ namespace Tim.Crm.Base.Entidades.Base
             if (string.IsNullOrWhiteSpace(message) || this.TracingService == null)
             {
                 return;
-            }
+            }      
+            
+            this.TracingService.Trace(message);               
 
+            //if (this.EnableTrace)
+            //{
 
-            if (this.EnableTrace)
-            {
-
-                if (this.PluginExecutionContext == null)
-                {
-                    this.TracingService.Trace(message);
-                }
-                else
-                {
-                    this.TracingService.Trace(
-                        "{0}, Correlation Id: {1}, Initiating User: {2}",
-                        message,
-                        this.PluginExecutionContext.CorrelationId,
-                        this.PluginExecutionContext.InitiatingUserId);
-                }
-            }
+            //    if (this.PluginExecutionContext == null)
+            //    {
+            //        this.TracingService.Trace(message);
+            //    }
+            //    else
+            //    {
+            //        this.TracingService.Trace(
+            //            "{0}, Correlation Id: {1}, Initiating User: {2}",
+            //            message,
+            //            this.PluginExecutionContext.CorrelationId,
+            //            this.PluginExecutionContext.InitiatingUserId);
+            //    }
+            //}
         }
 
         #endregion

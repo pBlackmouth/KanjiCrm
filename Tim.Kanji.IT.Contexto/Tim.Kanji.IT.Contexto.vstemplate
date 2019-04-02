@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
+    <TemplateID>a8956851-384f-486f-a7b5-b63dacb4413e</TemplateID>
     <Name>Kanji - Contexto</Name>
     <Description>Clase de acceso a los métodos que interactúan directamente con CRM.</Description>
     <Icon>Tim.Kanji.IT.Contexto.ico</Icon>
-    <TemplateID>a8956851-384f-486f-a7b5-b63dacb4413e</TemplateID>
     <AppliesTo>CSharp</AppliesTo>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>

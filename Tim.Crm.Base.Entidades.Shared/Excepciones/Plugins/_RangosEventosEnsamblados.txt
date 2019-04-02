@@ -3,3 +3,4 @@
 3001 - EjecucionStepException
 3002 - EntidadPrincipalException
 3003 - NullPluginContextException
+3004 - NullWorkflowActivityContextException

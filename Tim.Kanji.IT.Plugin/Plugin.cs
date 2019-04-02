@@ -15,6 +15,7 @@ namespace $rootnamespace$
         {
             try
             {
+                InitializeAppInsights(AssemblySharedData.AppInsightsInstrumentationKey);
                 Trace("Starting plugin");
 
                 var service = this.xrmPluginContext.OrganizationService;    //IOrganizationService                 
@@ -26,7 +27,8 @@ namespace $rootnamespace$
             }
             catch (Exception ex)
             {
-                //TODO: Register error here
+                // Write error on AppInsight
+                WriteError(ex.Message);
 
                 //TODO: Change error message.
                 throw new InvalidPluginExecutionException("PLUGIN ERROR:", ex);

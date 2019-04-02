@@ -21,6 +21,7 @@ namespace Tim.Crm.Base.Plugins
         {
             this.EntityLogicalName = EntityLogicalName;
         }
+
         public void Execute(IServiceProvider serviceProvider)
         {
             try

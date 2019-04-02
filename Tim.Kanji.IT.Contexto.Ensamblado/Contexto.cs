@@ -14,6 +14,7 @@ namespace $rootnamespace$
         : base(service)
     {
         Ext = new Extensiones(this);
+        Util = new Utilerias(service, this);
     }
 
     public class Extensiones
